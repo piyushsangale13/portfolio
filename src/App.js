@@ -8,7 +8,7 @@ const App = () => {
   const [activeTab, setActiveTab] = useState("home");
 
   return (
-    <div className="h-screen flex bg-[#1E1E1E] text-gray-300">
+    <div className="h-screen overflow-y-auto flex bg-[#1E1E1E] text-gray-300">
       <Sidebar setActiveTab={setActiveTab} openTabs={openTabs} setOpenTabs={setOpenTabs} />
       <Editor activeTab={activeTab} openTabs={openTabs} setOpenTabs={setOpenTabs} setActiveTab={setActiveTab} />
     </div>
