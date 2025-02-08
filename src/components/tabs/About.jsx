@@ -5,11 +5,11 @@ const About = () => {
     <pre className="text-orange-400">
       {`const aboutMe = {`}
       <br />
-      {`  name: "Your Name",`}
+      {`  name: "Piyush Rajendra Sangale",`}
       <br />
-      {`  role: "Full Stack Developer",`}
+      {`  college: "Indian Institute of Technology Mandi",`}
       <br />
-      {`  skills: ["React", "Node.js", "AWS", "Tailwind CSS"]`}
+      {`  skills: ["Fullstack development","AWS", "React.js", "Node.js", "Express.js", "MongoDB", "PostgreSQL"]`}
       <br />
       {`};`}
     </pre>

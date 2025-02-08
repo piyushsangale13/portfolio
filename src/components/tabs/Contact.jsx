@@ -5,11 +5,13 @@ const Contact = () => {
     <pre className="text-red-400">
       {`const contact = {`}
       <br />
-      {`  email: "your.email@example.com",`}
+      {`  email: "piyushsangale13@gmail.com",`}
       <br />
-      {`  phone: "+123 456 7890",`}
+      {`  phone: "+91 9325461338",`}
       <br />
-      {`  location: "Your City, Country"`}
+      {`  linkedin: "https://www.linkedin.com/in/piyush-sangale-561941224/"`}
+      <br />
+      {`  github: "https://github.com/piyushsangale13"`}
       <br />
       {`};`}
     </pre>
