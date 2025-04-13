@@ -14,7 +14,7 @@ const tabs = {
   contact: { name: "contact.js", component: <Contact /> },
 };
 
-const Editor = ({ activeTab, openTabs, setOpenTabs, setActiveTab }) => {
+const Editor = ({ activeTab, openTabs, setOpenTabs, setActiveTab, collapsed, setCollapsed }) => {
   const closeTab = (id) => {
     const newTabs = openTabs.filter((tab) => tab !== id);
     setOpenTabs(newTabs);
@@ -26,7 +26,7 @@ const Editor = ({ activeTab, openTabs, setOpenTabs, setActiveTab }) => {
   };
 
   return (
-    <div className="flex-1 flex flex-col bg-[#1E1E1E]">
+    <div className={`${collapsed ? "ml-16" : "ml-48"} transition-all duration-300 flex-1 flex flex-col bg-[#1E1E1E]`}>
       {/* Tabs Bar */}
       <div className="flex bg-[#252526] border-b border-gray-700 text-sm text-gray-400">
         {openTabs.map((id) => (
