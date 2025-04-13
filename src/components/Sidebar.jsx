@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Menu, Folder, Code, Person, Work, ContactMail } from "@mui/icons-material";
 
-const Sidebar = ({ setActiveTab, openTabs, setOpenTabs }) => {
-  const [collapsed, setCollapsed] = useState(false);
+const Sidebar = ({ setActiveTab, openTabs, setOpenTabs, collapsed, setCollapsed }) => {
 
   const handleOpenTab = (tab) => {
     if (!openTabs.includes(tab)) {
@@ -12,7 +11,7 @@ const Sidebar = ({ setActiveTab, openTabs, setOpenTabs }) => {
   };
 
   return (
-    <div className={`transition-all duration-300 ${collapsed ? "w-16" : "w-48"} bg-[#252526] flex flex-col py-4 border-r border-gray-700`}>
+    <div className={`${collapsed ? "w-16" : "w-48"} transition-all duration-300 fixed h-screen bg-[#252526] flex flex-col py-4 border-r border-gray-700`}>
       {/* Toggle Button */}
       <div className="flex items-center justify-between px-4">
         <span className={`${collapsed ? "hidden" : "text-white font-semibold"}`}>Explorer</span>
